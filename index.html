@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta
+      name="description"
+      content="Construisez une page contenant un message d'anniversaire évolutif pour votre ami, en utilisant HTML, CSS et jQuery !"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Carte d'anniversaire web</title>
+  </head>
+  <body>
+    <div id="myId" class="container" >
+      <section class="section-1 section" data-background-color="transparent">
+        <button class="btn">Aujourd'hui c'est un jour spécial</button>
+        <p style="display: none">Joyeux anniversaire !</p>
+        <p style="display: none">de toute ta famille</p>
+        <p style="display: none">On t'aime</p>
+      </section>
+      <section class="section" data-background-color="#3498db">
+        <label class="wrapper" for="states">
+            Choisi une couleur
+        </label>
+        <div class="button dropdown">
+          <select id="colorselector">
+            <option value="red">Rouge</option>
+            <option value="yellow">Jaune</option>
+            <option value="blue">Bleue</option>
+          </select>
+        </div>
+
+        <div class="output">
+          <div id="red" class="colors red">
+            On te souhaite une belle année 
+          </div>
+          <div id="yellow" class="colors yellow">
+            Tu es formidable ! 🙋
+          </div>
+          <div id="blue" class="colors blue">
+            Tu es notre meilleur(e) ami(e)
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/anniversaire.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.colors {
+  padding: 2em;
+  color: #fff;
+  display: none;
+}
+.red {
+  background: #c04;
+}
+.yellow {
+  color: #000;
+  background: #f5e000;
+}
+.blue {
+  background: #079;
+}
+
+/* background color */
+body {
+  transition: background 1s ease;
+  background: #3498db;
+}
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
